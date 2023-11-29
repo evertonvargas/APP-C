@@ -1,13 +1,13 @@
 {
   "vendor": "squadgrow",
-  "name": "service-everton",
+  "name": "app-c",
   "version": "0.0.1",
   "title": "Service Example",
   "description": "Reference app for VTEX IO Services",
   "mustUpdateAt": "2018-01-04",
   "categories": [],
   "dependencies": {
-    "squadgrow.service-example": "0.x"
+    "squadgrow.app-a": "0.x"
   },
   "builders": {
     "node": "6.x",
@@ -18,9 +18,6 @@
   },
   "credentialType": "absolute",
   "policies": [
-    {
-      "name": "squadgrow.service-example:constructor-policie"
-    },
     {
       "name": "colossus-fire-event"
     },

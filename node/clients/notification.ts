@@ -1,9 +1,9 @@
 import type { InstanceOptions, IOContext } from '@vtex/api'
 import { AppClient } from '@vtex/api'
 
-export class Drivers extends AppClient {
+export class Notification extends AppClient {
   constructor(context: IOContext, options?: InstanceOptions) {
-    super('squadgrow.service-example@0.x', context, {
+    super('squadgrow.app-a@0.x', context, {
       ...options,
       headers: {
         ...options?.headers,
@@ -15,11 +15,7 @@ export class Drivers extends AppClient {
     })
   }
 
-  public async getDrivers() {
-    return this.http.get(`/_v/routeprivateapp`)
-  }
-
-  public async getTest2(){
-    return this.http.get(`/_v/test-policies-service-route`)
+  public async getInfo(){
+    return this.http.get(`/_v/info`)
   }
 }
