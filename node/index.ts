@@ -2,8 +2,8 @@ import type { ClientsConfig, ServiceContext, RecorderState } from '@vtex/api'
 import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { infoApp } from './middlewares/infoapp'
 import { hello } from './middlewares/hello'
+import { order } from './middlewares/order'
 
 const TIMEOUT_MS = 800
 
@@ -51,8 +51,8 @@ export default new Service({
     hello: method({
       GET: [hello],
     }),
-    infoApp: method({
-      GET: [infoApp],
-    }),
+    getOrder: method({
+      GET: [order],
+    })
   },
 })

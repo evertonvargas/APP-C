@@ -1,7 +1,7 @@
 {
   "memory": 256,
   "ttl": 10,
-  "timeout": 2,
+  "timeout": 10,
   "minReplicas": 2,
   "maxReplicas": 4,
   "workers": 1,
@@ -10,8 +10,8 @@
       "path": "/_v/helloappc",
       "public": true
     },
-    "infoApp": {
-      "path": "/_v/getinfoappc",
+    "getOrder": {
+      "path": "/_v/private/getorder",
       "public": true
     }
   }
