@@ -1,0 +1,6 @@
+type Query {
+  """
+  Returns current account info
+  """
+  getOrder: String @cacheControl(scope: PRIVATE)
+}
